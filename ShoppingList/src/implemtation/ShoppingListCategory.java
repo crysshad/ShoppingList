@@ -11,14 +11,10 @@ import org.apache.logging.log4j.Logger;
 
 import data.ShoppingItem;
 
-/**
- * @author Jing
- *
- */
 public class ShoppingListCategory {
 
 	/**
-	 * Create categories
+	 * Categories and list
 	 */
 
 	private static List<ShoppingItem> foodItemList;
@@ -33,30 +29,15 @@ public class ShoppingListCategory {
 	public void createItemList() {
 		if (foodItemList == null) {
 			foodItemList = new ArrayList<ShoppingItem>();
-			logger.debug("creates a new foodItemList ArrayList");
+			logger.debug("created a new foodItemList ArrayList");
 		}
 
 		else if (homeItemList == null) {
 			homeItemList = new ArrayList<ShoppingItem>();
-			logger.debug("creates a new homeItemList ArrayList");
+			logger.debug("created a new homeItemList ArrayList");
 		}
 	}
 
-	public static List<ShoppingItem> getItemList(String category, ShoppingItem item) {
-
-		if (category == "food") {
-			return getFoodItemList();
-		}
-
-		else if (category == "home") {
-			return getHomeItemList();
-		}
-
-		else {
-			return getFoodItemList();
-		}
-
-	}
 
 	public static List<ShoppingItem> getFoodItemList() {
 		return foodItemList;

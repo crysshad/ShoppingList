@@ -15,10 +15,6 @@ import org.apache.logging.log4j.Logger;
 import data.ShoppingItem;
 import interfaceP.ShoppingList;
 
-/**
- * @author Jing
- *
- */
 public class ShoppingListImp extends ShoppingListCategory implements ShoppingList {
 
 	/**
@@ -50,7 +46,7 @@ public class ShoppingListImp extends ShoppingListCategory implements ShoppingLis
 
 		if (shoppingList == null) {
 			shoppingList = new HashMap<String, List<ShoppingItem>>();
-			logger.debug("creates a new shoppingList hashMap");
+			logger.debug("created a new shoppingList hashMap");
 		}
 
 		if (newItem.trim().length() > 0) {

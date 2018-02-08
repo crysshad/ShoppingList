@@ -3,10 +3,7 @@
  */
 package data;
 
-/**
- * @author Jing
- *
- */
+
 public class ShoppingItem {
 
 	/**
